@@ -13,4 +13,4 @@ https://trello.com/invite/b/IWMcZnVN/3e9c2a1e72d1401fd2af5ae53589634d/midterm-pr
 
 ![circle-agency](/src/img/circle-agency.png)
 
-<center><p>Made with ❤️ and ☕️ by Aitor Lancharro</p></center>
+<p align="center">Made with ❤️ and ☕️ by Aitor Lancharro</p>
