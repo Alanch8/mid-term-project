@@ -2,12 +2,17 @@
 
 ## Link to Trello's project
 
-https://trello.com/invite/b/IWMcZnVN/3e9c2a1e72d1401fd2af5ae53589634d/midterm-project
+<p>This is what the project initially looks like:
+
+[Trello's Project Template](https://trello.com/invite/b/IWMcZnVN/3e9c2a1e72d1401fd2af5ae53589634d/midterm-project)
 
 ## Requirements
 
 - Learn Project Managment and how to manage time with Kanban and Trello's technology.
+- Improve git & GitHub skills.
 - Clone the project (HTML, CSS and JS (Burger Menu and some Fetch from API)).
+- Responsive Design.
+- Work with Figma files.
 
 ## Final Result
 
