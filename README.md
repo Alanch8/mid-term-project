@@ -6,6 +6,8 @@
 
 [Trello's Project Template](https://trello.com/invite/b/IWMcZnVN/3e9c2a1e72d1401fd2af5ae53589634d/midterm-project)
 
+![trello-project](/misc-files/screencapture-trello-b-5HTlI9yW-midterm-project-2022-08-01-19_19_02.png)
+
 ## Requirements
 
 - Learn Project Managment and how to manage time with Kanban and Trello's technology.
