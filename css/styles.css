@@ -1,9 +1,62 @@
 body {
+  margin: 0;
   background-color: #f2f4fc;
   font-family: Roboto, sans-serif;
   color: #292e47;
   font-size: 14px;
   line-height: 20px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.nav {
+  margin-top: 70px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  width: 60px;
+  height: 18px;
+  background-image: url(/src/logos/circle.svg);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-link {
+  padding: 20px;
+  text-decoration: none;
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #8e93b1;
+}
+
+.active {
+  color: #0082f3;
+}
+
+.primary-btn {
+  padding: 15px 30px;
+  background-color: #072ac8;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
 }
 
 .card img {
