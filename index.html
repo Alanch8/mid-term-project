@@ -14,79 +14,96 @@
     />
   </head>
   <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
-      <!-- Nav section -->
+      <!-- NavBar -->
       <nav class="navbar">
-        <img class="navbar-logo" src="/src/logos/circle.svg" alt="" />
-        <div class="nav-a">
-          <a href="#" class="nav-link selected">Home</a>
-          <a href="#" class="nav-link">Projects</a>
-          <a href="#" class="nav-link">Services</a>
+        <img class="navbar-logo" src="/src/logos/circle.svg" alt="brand-logo" />
+        <div class="nav-links">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#services" class="nav-link">Services</a>
         </div>
         <button class="primary-button">Contact Us</button>
       </nav>
     </header>
-    <!-- Hero Content section -->
-    <section class="hero-content">
-      <div class="first-hero-div">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="left-hero-div">
         <h1>Empower Your Business With Stunning Design!</h1>
-        <p class="body-regular" style="margin-bottom: 50px">
+        <p class="body-regular">
           Circle is a digital design and development studio. We design and
           develop astonishing websites and mobile apps.
         </p>
         <div>
           <button class="primary-button">Get in touch</button>
-          <a href="#" class="nav-link" style="margin-left: 20px"
-            >See our work</a
-          >
+          <a href="#" class="nav-link">See our work</a>
         </div>
       </div>
-      <div class="hero-imgs">
-        <img class="hero-card1" src="/src/hero-section/card-1.png" alt="" />
+      <div class="right-hero-div">
+        <img class="card-1" src="/src/hero-section/card-1.png" alt="" />
         <img class="hero-img" src="/src/hero-section/hero-image.png" alt="" />
-        <img class="hero-card2" src="/src/hero-section/card-2.png" alt="" />
+        <img class="card-2" src="/src/hero-section/card-2.png" alt="" />
+      </div>
+      <div class="companies-div">
+        <!-- Remember to make a grey layer to the icons and a hover efect for the color with css -->
+        <img src="/src/logos/airbnb-logo.svg" alt="airbnb-logo" />
+        <img src="/src/logos/google-logo.svg" alt="google-logo" />
+        <img src="/src/logos/microsoft-logo.svg" alt="microsoft-logo" />
+        <img src="/src/logos/fedex-logo.svg" alt="fedex-logo" />
+        <img src="/src/logos/amazon-logo.svg" alt="amazon-logo" />
       </div>
     </section>
-    <!-- Remember to make a grey layer to the icons and a hover efect for the color with css -->
-    <img src="/src/logos/airbnb-logo.svg" alt="airbnb-logo" />
-    <img src="/src/logos/google-logo.svg" alt="google-logo" />
-    <img src="/src/logos/microsoft-logo.svg" alt="microsoft-logo" />
-    <img src="/src/logos/fedex-logo.svg" alt="fedex-logo" />
-    <img src="/src/logos/amazon-logo.svg" alt="amazon-logo" />
-    <!-- Recent Projects Section -->
-    <section>
-      <h2>Recent Projects</h2>
-      <div>
-        <h3>Simplify</h3>
-        <p>UI Design & App Development</p>
-        <a href="">Learn More</a>
-      </div>
-      <div>
-        <h3>Dashcoin</h3>
-        <p>Web Development</p>
-        <a href="">Learn More</a>
-        <a href="">Learn More</a>
-        <a href="">Learn More</a>
-      </div>
-      <div>
-        <h3>Vectorify</h3>
-        <p>User Experience Design</p>
-        <a href="">Learn More</a>
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="Projects">
+        <h2>Recent Projects</h2>
+        <div class="card">
+          <img src="/src/projects-section/1.jpg" alt="abstract-img-1" />
+          <h3>Simplify</h3>
+          <p>UI Design & App Development</p>
+          <a href="/single-page.html">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="/src/projects-section/2.jpg" alt="abstract-img-2" />
+          <h3>Dashcoin</h3>
+          <p>Web Development</p>
+          <a href="/single-page.html">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="/src/projects-section/3.jpg" alt="abstract-img-3" />
+          <h3>Vectorify</h3>
+          <p>User Experience Design</p>
+          <a href="/single-page.html">Learn More</a>
+        </div>
       </div>
     </section>
+    <!-- Testimonials Section -->
     <section>
-      <h2>Hear What Our Clients Have to Say</h2>
-      <p class="body-regular">
-        "Circle helped us through every stage of our startup. We really enjoyed
-        working with you."
-      </p>
-      <h5>Kristin Watson</h5>
-      <p>Booking.com</p>
+      <div>
+        <img src="/src/testimonial-section/memoji-1.png" alt="memoji-1" />
+        <img src="/src/testimonial-section/memoji-2.png" alt="memoji-2" />
+      </div>
+      <div>
+        <h2>Hear What Our Clients Have to Say</h2>
+        <p class="body-regular">
+          "Circle helped us through every stage of our startup. We really
+          enjoyed working with you."
+        </p>
+        <img src="/src/testimonial-section/profile.png" alt="profile-img" />
+        <h5>Kristin Watson</h5>
+        <p>Booking.com</p>
+      </div>
+      <div>
+        <img src="/src/testimonial-section/memoji-3.png" alt="memoji-3" />
+        <img src="src/testimonial-section/memoji-4.png" alt="memoji-4" />
+      </div>
     </section>
-    <section>
+    <!-- Services Section -->
+    <section id="services">
       <h2>Our Services</h2>
       <div>
+        <img src="/src/services-section/icons/1.svg" alt="service-icon-1" />
         <h3>User Interface Design</h3>
         <p>
           Circle provides you with a stunning user interface design that is
@@ -95,6 +112,7 @@
         <a href="">Learn More</a>
       </div>
       <div>
+        <img src="/src/services-section/icons/2.svg" alt="service-icon-2" />
         <h3>User Experience Design</h3>
         <p>
           Circle always focuses on delivering the best user experience to your
@@ -103,6 +121,7 @@
         <a href="">Learn More</a>
       </div>
       <div>
+        <img src="/src/services-section/icons/3.svg" alt="service-icon-3" />
         <h3>Application Development</h3>
         <p>
           We develop high-quality mobile and web applications using the latest
@@ -110,24 +129,28 @@
         </p>
         <a href="">Learn More</a>
       </div>
-      <section>
-        <h3>Do you have any questions?</h3>
-        <p>Let us help you!</p>
-        <input type="text" placeholder="Enter your email" />
-        <button>Suscribe</button>
-      </section>
     </section>
+    <!-- Suscribe Section -->
+    <section>
+      <h3>Do you have any questions?</h3>
+      <p>Let us help you!</p>
+      <input type="text" placeholder="Enter your email" />
+      <button>Suscribe</button>
+    </section>
+    <!-- Footer -->
     <footer>
-      <h2>Circle</h2>
-      <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+      <div>
+        <img src="/src/logos/circle.svg" alt="" />
+        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Team</a
+        ><a href="#" class="footer-link">Services</a
+        ><a href="#" class="footer-link">About Us</a
+        ><a href="#" class="footer-link">Press</a
+        ><a href="#" class="footer-link">Projects</a
+        ><a href="#" class="footer-link">Privacy Policy</a>
+      </div>
     </footer>
-    <ul>
-      <li>Team</li>
-      <li>Services</li>
-      <li>About us</li>
-      <li>Press</li>
-      <li>Projects</li>
-      <li>Privacy Policy</li>
-    </ul>
   </body>
 </html>

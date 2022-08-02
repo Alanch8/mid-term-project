@@ -5,3 +5,7 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
+
+.card img {
+  width: 20%;
+}
