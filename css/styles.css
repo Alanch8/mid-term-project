@@ -71,3 +71,98 @@ h1 {
 .card img {
   width: 20%;
 }
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-hero-div {
+  max-width: 530px;
+}
+
+.hero-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #292e47;
+  font-size: 60px;
+  line-height: 130%;
+  font-weight: bold;
+}
+
+.body-regular {
+  margin-bottom: 40px;
+  max-width: 435px;
+  color: #6b708d;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.hero-text-btn {
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.right-hero-div {
+  position: relative;
+}
+
+.card-1 {
+  position: absolute;
+  left: -19%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  max-width: 375px;
+}
+
+.hero-img {
+  width: 560px;
+}
+
+.card-2 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -25%;
+  bottom: -22%;
+  max-width: 375px;
+}
+
+.projects {
+  margin-top: 200px;
+  padding: 0 30px;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.companies {
+  margin-top: 130px;
+}
+
+.grid-logos {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.client-logo {
+  display: flex;
+  width: 150px;
+  height: 96px;
+  max-height: 96px;
+  max-width: 150px;
+  justify-content: center;
+  align-items: center;
+}
