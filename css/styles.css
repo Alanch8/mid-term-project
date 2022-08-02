@@ -161,7 +161,7 @@ h1 {
   padding: 0 30px;
 }
 
-.project-cards {
+.project-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -172,4 +172,208 @@ h1 {
   font-size: 40px;
   line-height: 36px;
   margin-top: 20px;
+}
+
+.collection-list-wrapper {
+  margin-top: 70px;
+}
+
+.collection-list {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 16px;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.project-card {
+  display: flex;
+  width: 340px;
+  height: 444px;
+  max-height: 444px;
+  max-width: 340px;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.project-card-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.project-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-title {
+  margin: 30px 30px 20px;
+  color: #292e47;
+  font-size: 24px;
+  line-height: 115%;
+  font-weight: 500;
+}
+.project-title.project-description {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.project-link {
+  margin: 30px;
+  color: #072ac8;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.testimonials-section {
+  position: relative;
+  max-width: 1320px;
+  padding: 0px 30px;
+  height: 622px;
+  margin-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #292e47;
+  background-image: url(/src/testimonial-section/orbit.png);
+  background-position: 0px 0px;
+  background-size: contain;
+  color: #292e47;
+}
+
+.testimonials-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonial-heading {
+  color: #ecf7ff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  max-width: 560px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #ffc600;
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.client {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.client-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(/src/testimonial-section/profile.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-info {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.client-name {
+  color: #a2d6f9;
+  font-size: 17px;
+}
+
+.client-position {
+  color: #ecf7ff;
+  font-size: 13px;
+}
+.emoji-top-left {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  margin-top: 5%;
+  margin-left: 10%;
+  background-image: url(/src/testimonial-section/memoji-1.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.emoji-top-right {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  margin-top: 5%;
+  margin-right: 10%;
+  background-image: url(/src/testimonial-section/memoji-2.png);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.emoji-bottom-left {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 0%;
+  top: auto;
+  right: auto;
+  bottom: 0%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  padding-left: 0%;
+  background-image: url(/src/testimonial-section/memoji-3.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.emoji-bottom-right {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: auto;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  background-image: url(/src/testimonial-section/memoji-4.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
