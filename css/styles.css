@@ -133,17 +133,6 @@ h1 {
   max-width: 375px;
 }
 
-.projects {
-  margin-top: 200px;
-  padding: 0 30px;
-}
-
-.project-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .companies {
   margin-top: 130px;
 }
@@ -165,4 +154,22 @@ h1 {
   max-width: 150px;
   justify-content: center;
   align-items: center;
+}
+
+.projects {
+  margin-top: 200px;
+  padding: 0 30px;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects-heading {
+  color: #292e47;
+  font-size: 40px;
+  line-height: 36px;
+  margin-top: 20px;
 }
