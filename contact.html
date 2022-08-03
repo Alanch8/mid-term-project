@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Agency</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Icons Import -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="nav">
+        <nav class="navbar container">
+          <a href="#" class="navbar-logo"></a>
+          <div class="desktop-menu">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#services" class="nav-link">Services</a>
+          </div>
+          <a href="/contact.html" class="primary-btn desktop-btn">Contact Us</a>
+        </nav>
+        <!-- Burger Menu -->
+        <div>
+          <ul class="menu">
+            <div class="mobile-menu">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#services" class="nav-link">Services</a>
+            </div>
+          </ul>
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">menu</i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Form section -->
+    <div class="contact">
+      <div class="container contact-container">
+        <h1 class="contact-heading">Contact Us</h1>
+        <div class="contact-form">
+          <form
+            id="email-form"
+            name="email-form"
+            data-name="Email Form"
+            method="get"
+            class="contact-form-wrapper"
+            aria-label="Email Form"
+          >
+            <div id="form-1" class="contact-text-wrapper">
+              <label for="name" class="contact-title">Full Name *</label
+              ><input
+                type="text"
+                class="contact-text-field"
+                maxlength="256"
+                name="name"
+                data-name="Name"
+                placeholder="Enter your full name"
+                id="name"
+                required=""
+              />
+            </div>
+            <div id="form-2" class="contact-text-wrapper">
+              <label for="name-2" class="contact-title">Email</label
+              ><input
+                type="email"
+                class="contact-text-field"
+                maxlength="256"
+                name="name-2"
+                data-name="Name 2"
+                placeholder="Enter your email"
+                id="name-2"
+              />
+            </div>
+            <div id="form-3" class="contact-text-wrapper">
+              <label for="name-3" class="contact-title">Phone</label
+              ><input
+                type="tel"
+                class="contact-text-field"
+                maxlength="256"
+                name="name-3"
+                data-name="Name 3"
+                placeholder="Enter your phone"
+                id="name-3"
+              />
+            </div>
+            <div id="form-4" class="contact-text-wrapper">
+              <label for="field" class="contact-title">Message *</label
+              ><textarea
+                placeholder="Write your message here..."
+                maxlength="5000"
+                id="field"
+                name="field"
+                required=""
+                data-name="field"
+                class="contact-text-field textarea"
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              data-wait="Please wait..."
+              id="form-5"
+              class="primary-btn-contact-form"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-section">
+        <div class="container footer">
+          <div class="footer-content">
+            <div class="footer-content-logo"></div>
+            <div class="footer-content-address">
+              2972 Westheimer Rd. Santa Ana, Illinois 85486
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Team</a
+            ><a href="#" class="footer-link">Services</a
+            ><a href="#" class="footer-link">About Us</a
+            ><a href="#" class="footer-link">Press</a
+            ><a href="#" class="footer-link">Projects</a
+            ><a href="#" class="footer-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="badge"
+      href="https://www.ironhack.com/es/barcelona?utm_source=google&utm_medium=cpc&utm_campaign=RMTEU_Spain_Tier2_Global_Search_Brand_ES&utm_content=search-brand&utm_term=ironhack"
+      ><img
+        src="/src/img/ironhack-logo.svg"
+        alt="ironhack-logo"
+        style="margin-right: 8px; width: 16px; margin-bottom: -2px" /><img
+        src="/src/img/made-with-at-ironhack.svg"
+        alt="Made with ☕️ at Ironhack"
+    /></a>
+    <script src="hamburgerMenu.js"></script>
+  </body>
+</html>
