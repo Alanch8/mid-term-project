@@ -666,6 +666,32 @@ h1 {
   color: #0000ee;
 }
 
+.badge {
+  position: fixed !important;
+  display: inline-block !important;
+  visibility: visible !important;
+  z-index: 2147483647 !important;
+  top: auto !important;
+  right: 12px !important;
+  bottom: 12px !important;
+  left: auto !important;
+  color: #aaadb0 !important;
+  background-color: #fff !important;
+  border-radius: 3px !important;
+  padding: 6px 8px 6px 6px !important;
+  font-size: 12px !important;
+  opacity: 1 !important;
+  line-height: 14px !important;
+  text-decoration: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  white-space: nowrap;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
+  cursor: pointer;
+}
+
 /* Media Queries  */
 
 @media screen and (max-width: 991px) {
@@ -731,9 +757,11 @@ h1 {
   .client-logo.amazon {
     display: none;
   }
+
   .projects {
     margin-top: 40px;
   }
+
   .collection-list {
     max-width: 100%;
     grid-template-columns: 1fr 1fr;
@@ -791,6 +819,16 @@ h1 {
 
 /* Burger Menu */
 
+@media all and (min-width: 991px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
 @media all and (max-width: 991px) {
   .hamburger {
     position: absolute;
@@ -840,12 +878,130 @@ h1 {
   }
 }
 
-@media all and (min-width: 991px) {
-  .hamburger {
+@media all and (max-width: 767px) {
+  .card-1 {
     display: none;
   }
 
-  .menu {
+  .card-2 {
     display: none;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-heading {
+    text-align: center;
+  }
+
+  .collection-list-wrapper {
+    margin-top: 20px;
+  }
+
+  .collection-list {
+    justify-items: stretch;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .collection-item {
+    max-width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section.testimonial {
+    height: 450px;
+  }
+
+  .emoji-top-left {
+    display: none;
+  }
+
+  .emoji-top-right {
+    display: none;
+  }
+
+  .emoji-bottom-left {
+    display: none;
+  }
+
+  .emoji-bottom-right {
+    display: none;
+  }
+
+  .projects-heading {
+    text-align: center;
+  }
+
+  .services-grid {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+
+  .service-icon.icon-1 {
+    flex: 0 0 auto;
+  }
+
+  .service-icon.icon-2 {
+    flex: 0 0 auto;
+  }
+
+  .service-icon.icon-3 {
+    flex: 0 0 auto;
+  }
+
+  .suscribe-section {
+    width: 100%;
+  }
+
+  .suscribe-form {
+    max-width: 100%;
+  }
+
+  .suscribe-heading {
+    font-size: 30px;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .sus-form {
+    flex-direction: column;
+  }
+
+  .primary-btn-form {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    align-items: center;
+  }
+
+  .footer-content-address {
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 20px;
   }
 }
