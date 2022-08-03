@@ -32,7 +32,7 @@ h1 {
 .navbar-logo {
   width: 60px;
   height: 18px;
-  background-image: url(/src/logos/circle.svg);
+  background-image: url(src/logos/circle.svg);
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1169,4 +1169,5 @@ h1 {
 
   .primary-btn-contact-form {
     width: 94%;
+  }
 }
