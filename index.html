@@ -12,23 +12,39 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google Icons Import -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <!-- NavBar -->
       <div class="nav">
         <nav class="navbar container">
           <a href="#" class="navbar-logo"></a>
-          <div>
-            <a href="#" class="active nav-link">Home</a>
+          <div class="desktop-menu">
+            <a href="#" class="nav-link">Home</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#services" class="nav-link">Services</a>
           </div>
-          <a href="/contact.html" class="primary-btn">Contact Us</a>
+          <a href="/contact.html" class="primary-btn desktop-btn">Contact Us</a>
         </nav>
       </div>
     </header>
+    <!-- Burger Menu -->
+    <ul class="menu">
+      <li><a class="menuItem" href="#">Home</a></li>
+      <li><a class="menuItem" href="#">Profile</a></li>
+      <li><a class="menuItem" href="#">About</a></li>
+      <li><a class="menuItem" href="#">Contacts</a></li>
+    </ul>
+    <button class="hamburger">
+      <!-- material icons https://material.io/resources/icons/ -->
+      <i class="menuIcon material-icons">menu</i>
+      <i class="closeIcon material-icons">close</i>
+    </button>
     <!-- Hero Section -->
     <section class="hero-section container">
       <div class="hero-top">
@@ -40,9 +56,9 @@
             Circle is a digital design and development studio. We design and
             develop astonishing websites and mobile apps.
           </p>
-          <div>
+          <div class="hero-btns">
             <a href="#" class="hero-text-btn">See our work</a>
-            <a href="#" class="primary-btn">Get in touch</a>
+            <a href="#" class="primary-btn hero-btn">Get in touch</a>
           </div>
         </div>
         <div class="right-hero-div">
@@ -51,8 +67,7 @@
           <img class="card-2" src="/src/hero-section/card-2.png" alt="" />
         </div>
       </div>
-      <div class="companies container">
-        <!-- Remember to make a grey layer to the icons and a hover efect for the color with css -->
+      <div class="container companies">
         <div class="grid-logos">
           <div class="client-logo">
             <img src="/src/logos/airbnb-logo.svg" alt="airbnb-logo" />
@@ -66,7 +81,7 @@
           <div class="client-logo">
             <img src="/src/logos/fedex-logo.svg" alt="fedex-logo" />
           </div>
-          <div class="client-logo">
+          <div class="client-logo amazon">
             <img src="/src/logos/amazon-logo.svg" alt="amazon-logo" />
           </div>
         </div>
@@ -144,7 +159,6 @@
         </div>
       </div>
     </section>
-
     <!-- Testimonials Section -->
     <section>
       <div class="testimonials-section">
@@ -162,14 +176,12 @@
             </div>
           </div>
         </div>
-
         <div class="emoji-top-left"></div>
         <div class="emoji-top-right"></div>
         <div class="emoji-bottom-left"></div>
         <div class="emoji-bottom-right"></div>
       </div>
     </section>
-
     <!-- Services Section -->
     <div id="services" class="services-section">
       <div class="container">
@@ -217,9 +229,7 @@
         </div>
       </div>
     </div>
-
     <!-- Suscribe Section -->
-
     <section>
       <div class="suscribe-section">
         <div class="suscribe-form">
@@ -251,7 +261,6 @@
         </div>
       </div>
     </section>
-
     <!-- Footer -->
     <footer>
       <div class="footer-section">
@@ -273,5 +282,6 @@
         </div>
       </div>
     </footer>
+    <script src="hamburgerMenu.js"></script>
   </body>
 </html>
