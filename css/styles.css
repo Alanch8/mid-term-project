@@ -799,6 +799,11 @@ h1 {
   background-color: #292e47;
 }
 
+.closeIcon {
+  color: #f2f4fc;
+  display: none;
+}
+
 /* Media Queries  */
 
 @media screen and (max-width: 991px) {

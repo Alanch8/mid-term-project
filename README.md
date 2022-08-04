@@ -1,5 +1,9 @@
 # Mid Term Project
 
+## Live Demo of the project (GitHub Pages)
+
+[Live Demo - Circle Agency](https://alanch8.github.io/mid-term-project/)
+
 ## Link to Trello's project
 
 <p>This is what the project initially looks like:
