@@ -82,7 +82,7 @@ function addPost(preventForm) {
   preventForm.preventDefault();
 
   let name = document.getElementById("name").value;
-  let mail = document.getElementById("mail").value;
+  let email = document.getElementById("email").value;
   let phone = document.getElementById("phone").value;
   let message = document.getElementById("message").value;
 
@@ -92,11 +92,19 @@ function addPost(preventForm) {
       Accept: "text/plain, application/json, */*",
       "Content-type": "application/json",
     },
-    body: JSON.stringify({ title: title, body: body }),
+    body: JSON.stringify({
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    }),
   })
     .then((response) => response.json())
-    .then((dataDeFormulario) => {
-      console.log(dataDeFormulario);
+    .then((data) => {
+      console.log(data);
     });
-  body.value = "";
+  name.value = "";
+  email.value = "";
+  phone.value = "";
+  message.value = "";
 }

@@ -55,7 +55,7 @@
         <h1 class="contact-heading">Contact Us</h1>
         <div class="contact-form">
           <form
-            id="email-form"
+            id="addPost"
             name="email-form"
             data-name="Email Form"
             method="get"
@@ -76,7 +76,7 @@
               />
             </div>
             <div id="form-2" class="contact-text-wrapper">
-              <label for="name-2" class="contact-title">Email</label
+              <label for="email" class="contact-title">Email</label
               ><input
                 type="email"
                 class="contact-text-field"
@@ -84,11 +84,11 @@
                 name="name-2"
                 data-name="Name 2"
                 placeholder="Enter your email"
-                id="name-2"
+                id="email"
               />
             </div>
             <div id="form-3" class="contact-text-wrapper">
-              <label for="name-3" class="contact-title">Phone</label
+              <label for="phone" class="contact-title">Phone</label
               ><input
                 type="tel"
                 class="contact-text-field"
@@ -96,15 +96,15 @@
                 name="name-3"
                 data-name="Name 3"
                 placeholder="Enter your phone"
-                id="name-3"
+                id="phone"
               />
             </div>
             <div id="form-4" class="contact-text-wrapper">
-              <label for="field" class="contact-title">Message *</label
+              <label for="message" class="contact-title">Message *</label
               ><textarea
                 placeholder="Write your message here..."
                 maxlength="5000"
-                id="field"
+                id="message"
                 name="field"
                 required=""
                 data-name="field"
@@ -119,6 +119,15 @@
               class="primary-btn-contact-form"
             />
           </form>
+          <div
+            class="form-done"
+            tabindex="-1"
+            role="region"
+            aria-label="Email Form success"
+            style="display: none"
+          >
+            <div>El formulario se ha enviado correctamente!</div>
+          </div>
         </div>
       </div>
     </div>
@@ -155,5 +164,6 @@
         alt="Made with ☕️ at Ironhack"
     /></a>
     <script src="hamburgerMenu.js"></script>
+    <script src="fetchAPI.js"></script>
   </body>
 </html>

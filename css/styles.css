@@ -244,6 +244,7 @@ header {
 }
 
 .project-card {
+  margin: 20px;
   display: flex;
   width: 340px;
   height: 444px;
@@ -914,13 +915,17 @@ header {
   font-size: 20px;
   line-height: 30px;
 }
+
+.form-done {
+  width: 1035px;
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background-color: #dddddd;
+}
 /* Media Queries  */
 
 @media screen and (max-width: 991px) {
-  /* #project-cards {
-    display: flex;
-  } */
-
   .navbar {
     padding-right: 30px;
     padding-left: 30px;
@@ -1136,10 +1141,10 @@ header {
     max-width: 100%;
   }
 
-  .project-card {
+  /* .project-card {
     width: 100%;
     max-width: 100%;
-  }
+  } */
 
   .section.testimonial {
     height: 450px;
