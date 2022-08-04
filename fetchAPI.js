@@ -4,9 +4,7 @@ function getJsonPosts() {
     .then((res) => {
       let data = "";
       res.forEach((post) => {
-        data += `<div role="list" class="collection-list">
-              <div role="listitem" class="collection-item">
-                <div class="project-card">
+        data += `<div class="project-card">
                   <div class="project-image">
                     <img src="src/projects-section/${
                       post.id
@@ -28,9 +26,7 @@ function getJsonPosts() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>`;
+              </div>`;
       });
       document.getElementById("project-cards").innerHTML = data;
     });
@@ -80,3 +76,27 @@ function getJsonSinglePost() {
 }
 
 getJsonSinglePost();
+
+//Post method
+function addPost(preventForm) {
+  preventForm.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let mail = document.getElementById("mail").value;
+  let phone = document.getElementById("phone").value;
+  let message = document.getElementById("message").value;
+
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    headers: {
+      Accept: "text/plain, application/json, */*",
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify({ title: title, body: body }),
+  })
+    .then((response) => response.json())
+    .then((dataDeFormulario) => {
+      console.log(dataDeFormulario);
+    });
+  body.value = "";
+}
