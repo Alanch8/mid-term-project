@@ -23,9 +23,9 @@
     <header>
       <div class="nav">
         <nav class="navbar container">
-          <a href="#" class="navbar-logo"></a>
+          <a href="#fakeQuery" class="navbar-logo"></a>
           <div class="desktop-menu">
-            <a href="#" class="nav-link">Home</a>
+            <a href="#fakeQuery" class="nav-link">Home</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#services" class="nav-link">Services</a>
           </div>
@@ -35,7 +35,7 @@
         <div>
           <ul class="menu">
             <div class="mobile-menu">
-              <a href="#" class="nav-link">Home</a>
+              <a href="#fakeQuery" class="nav-link">Home</a>
               <a href="#projects" class="nav-link">Projects</a>
               <a href="#services" class="nav-link">Services</a>
             </div>
@@ -61,8 +61,8 @@
             develop astonishing websites and mobile apps.
           </p>
           <div class="hero-btns">
-            <a href="#" class="hero-text-btn">See our work</a>
-            <a href="#" class="primary-btn hero-btn">Get in touch</a>
+            <a href="#fakeQuery" class="hero-text-btn">See our work</a>
+            <a href="#fakeQuery" class="primary-btn hero-btn">Get in touch</a>
           </div>
         </div>
         <div class="right-hero-div">
@@ -96,72 +96,7 @@
       <div class="projects">
         <div class="container projects-container">
           <h2 class="projects-heading">Recent Projects</h2>
-          <div class="collection-list-wrapper">
-            <div role="list" class="collection-list">
-              <div role="listitem" class="collection-item">
-                <div class="project-card">
-                  <div class="project-image">
-                    <img
-                      src="src/projects-section/1.jpg"
-                      alt="abstract-img-1"
-                      class="project-card-image"
-                    />
-                  </div>
-                  <div class="project-content">
-                    <div class="project-text">
-                      <div class="project-title">Simplify</div>
-                      <div class="project-title project-description">
-                        UI Design &amp; App Development
-                      </div>
-                      <a href="single-page.html" class="project-link"
-                        >Learn More</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div role="listitem" class="collection-item">
-                <div class="project-card">
-                  <div class="project-image">
-                    <img
-                      src="src/projects-section/2.jpg"
-                      alt="abstract-img-2"
-                      class="project-card-image"
-                    />
-                  </div>
-                  <div class="project-content">
-                    <div class="project-text">
-                      <div class="project-title">Dashcoin</div>
-                      <div class="project-title project-description">
-                        Web Development
-                      </div>
-                      <a href="#" class="project-link">Learn More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div role="listitem" class="collection-item">
-                <div class="project-card">
-                  <div class="project-image">
-                    <img
-                      src="src/projects-section/3.jpg"
-                      alt="abstract-img-3"
-                      class="project-card-image"
-                    />
-                  </div>
-                  <div class="project-content">
-                    <div class="project-text">
-                      <div class="project-title">Vectorify</div>
-                      <div class="project-title project-description">
-                        User Experience Design
-                      </div>
-                      <a href="#" class="project-link">Learn More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="project-cards" class="collection-list-wrapper"></div>
         </div>
       </div>
     </section>
@@ -203,7 +138,7 @@
                   is accessible to everyone.
                 </div>
               </div>
-              <a href="#services" class="project-link">Learn More</a>
+              <a href="#fakeQuery" class="project-link">Learn More</a>
             </div>
           </div>
           <div class="service-card">
@@ -216,7 +151,7 @@
                   to your customers.
                 </div>
               </div>
-              <a href="#services" class="project-link">Learn More</a>
+              <a href="#fakeQuery" class="project-link">Learn More</a>
             </div>
           </div>
           <div class="service-card">
@@ -229,7 +164,7 @@
                   latest technology stack.
                 </div>
               </div>
-              <a href="#services" class="project-link">Learn More</a>
+              <a href="#fakeQuery" class="project-link">Learn More</a>
             </div>
           </div>
         </div>
@@ -268,7 +203,7 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
       <div class="footer-section">
         <div class="container footer">
           <div class="footer-content">
@@ -278,12 +213,12 @@
             </div>
           </div>
           <div class="footer-links">
-            <a href="#" class="footer-link">Team</a
-            ><a href="#" class="footer-link">Services</a
-            ><a href="#" class="footer-link">About Us</a
-            ><a href="#" class="footer-link">Press</a
-            ><a href="#" class="footer-link">Projects</a
-            ><a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#footer" class="footer-link">Team</a
+            ><a href="#footer" class="footer-link">Services</a
+            ><a href="#footer" class="footer-link">About Us</a
+            ><a href="#footer" class="footer-link">Press</a
+            ><a href="#footer" class="footer-link">Projects</a
+            ><a href="#footer" class="footer-link">Privacy Policy</a>
           </div>
         </div>
       </div>
@@ -299,5 +234,6 @@
         alt="Made with ☕️ at Ironhack"
     /></a>
     <script src="hamburgerMenu.js"></script>
+    <script src="fetchAPI.js"></script>
   </body>
 </html>

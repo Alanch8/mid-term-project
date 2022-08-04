@@ -11,6 +11,10 @@ h1 {
   font-size: 20px;
 }
 
+header {
+  z-index: 99;
+}
+
 /* Navbar Section */
 
 .nav {
@@ -202,7 +206,7 @@ h1 {
   padding: 0 30px;
 }
 
-.project-container {
+.projects-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -216,6 +220,7 @@ h1 {
 }
 
 .collection-list-wrapper {
+  display: flex;
   margin-top: 70px;
 }
 
@@ -223,7 +228,7 @@ h1 {
   display: grid;
   grid-auto-flow: row;
   grid-auto-columns: 1fr;
-  grid-column-gap: 40px;
+  grid-column-gap: 20px;
   grid-row-gap: 16px;
   max-width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -248,6 +253,7 @@ h1 {
 }
 
 .project-content {
+  margin-top: -5px;
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -271,6 +277,9 @@ h1 {
   margin-bottom: 10px;
   font-size: 17px;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .project-link {
   margin: 30px;
@@ -310,6 +319,14 @@ h1 {
   margin-top: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.learn-more-link-2 {
+  margin-top: 113px;
+}
+
+.learn-more-link-3 {
+  margin-top: 57px;
 }
 
 /* Testimonials Section */
@@ -667,6 +684,11 @@ h1 {
   color: #0000ee;
 }
 
+.closeIcon {
+  color: #f2f4fc;
+  display: none;
+}
+
 /* Badge easterEgg - Made with ☕️ at IronHack */
 
 .badge {
@@ -799,14 +821,98 @@ h1 {
   background-color: #292e47;
 }
 
-.closeIcon {
-  color: #f2f4fc;
-  display: none;
+/* Post Section */
+
+.post-section {
+  margin-top: 70px;
+  padding: 0px 30px;
 }
 
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-page-title {
+  font-size: 60px;
+  line-height: 1;
+}
+
+.post-type-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.post-page-type {
+  color: #6b708d;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.post-completion {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-completed {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.post-date {
+  color: #6b708d;
+  font-size: 20px;
+}
+
+.post-image-wrapper {
+  position: relative;
+  margin-top: 80px;
+}
+
+.post-page-image {
+  width: 100%;
+  height: 444px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.post-page-image-effect {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+  width: 100%;
+  height: 444px;
+  opacity: 0.4;
+  filter: saturate(200%) blur(40px);
+  transform: translate(0px, 0px);
+  transition: opacity 200ms ease;
+  object-fit: cover;
+}
+
+.post-detail {
+  margin-top: 70px;
+  font-size: 20px;
+  line-height: 30px;
+}
 /* Media Queries  */
 
 @media screen and (max-width: 991px) {
+  /* #project-cards {
+    display: flex;
+  } */
+
   .navbar {
     padding-right: 30px;
     padding-left: 30px;
