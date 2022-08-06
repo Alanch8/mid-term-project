@@ -2,6 +2,7 @@ function getJsonPosts() {
   fetch("http://jsonplaceholder.typicode.com/posts/?_limit=3")
     .then((response) => response.json())
     .then((res) => {
+      let mainGrid = "";
       let data = "";
       res.forEach((post) => {
         data += `<div class="project-card">

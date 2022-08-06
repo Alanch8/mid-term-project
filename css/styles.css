@@ -917,11 +917,12 @@ header {
 }
 
 .form-done {
+  margin-top: 10px;
   width: 1116px;
   display: none;
   padding: 20px;
   text-align: center;
-  background-color: #dddddd;
+  background-color: #d5f4c6;
 }
 /* Media Queries  */
 
