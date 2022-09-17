@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/jpg" href="./src/logos/favicon.png" />
   </head>
   <body>
     <!-- Header Section -->
@@ -92,16 +93,66 @@
       </div>
     </section>
     <!-- Projects Section -->
-    <section id="projects">
+    <section>
       <div class="projects">
         <div class="container projects-container">
           <h2 class="projects-heading">Recent Projects</h2>
-          <div role="list" class="collection-list">
-            <div id="project-cards" class="collection-list-wrapper"></div>
+          <!-- <div role="list" class="collection-list"> -->
+          <div class="projectsArticles">
+            <div class="collection-list-wrapper">
+              <div id="project-cards" class="project-card"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- <section class="projects">
+      <h2 class="projects-heading">Recent Projects</h2>
+      <div class="projectsArticles">
+        <article class="projectsArticle">
+          <img
+            src="./src/projects-section/1.jpg"
+            alt="imagen"
+            class="project-card-image"
+          />
+          <div class="project_text">
+            <h3 class="dataTitle">Simplify</h3>
+            <div class="text dataBody">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <a href="./single-page.html" class="learnMore">learn more</a>
+          </div>
+        </article>
+        <article class="projectsArticle">
+          <img
+            src="./src/projects-section/2.jpg"
+            alt="imagen"
+            class="project-card-image"
+          />
+          <div class="project_text">
+            <h3 class="dataTitle">DashCoin</h3>
+            <div class="text dataBody">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <a href="" class="learnMore">learn more</a>
+          </div>
+        </article>
+        <article class="projectsArticle">
+          <img
+            src="./src/projects-section/3.jpg"
+            alt="imagen"
+            class="project-card-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Vectorify</h3>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <a href="" class="learnMore">learn more</a>
+          </div>
+        </article>
+      </div>
+    </section> -->
     <!-- Testimonials Section -->
     <section>
       <div class="testimonials-section">
@@ -237,5 +288,7 @@
     /></a>
     <script src="hamburgerMenu.js"></script>
     <script src="fetchAPI.js"></script>
+
+    <script src="./fetchData.js"></script>
   </body>
 </html>

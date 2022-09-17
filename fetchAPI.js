@@ -5,8 +5,7 @@ function getJsonPosts() {
       let mainGrid = "";
       let data = "";
       res.forEach((post) => {
-        data += `<div class="project-card">
-                  <div class="project-image">
+        data += `<div class="project-image">
                     <img src="src/projects-section/${
                       post.id
                     }.jpg" alt="abstract-img-${
@@ -26,8 +25,7 @@ function getJsonPosts() {
                       }">Learn More</a>
                     </div>
                   </div>
-                </div>
-              </div>`;
+                </div>`;
       });
       document.getElementById("project-cards").innerHTML = data;
     });
