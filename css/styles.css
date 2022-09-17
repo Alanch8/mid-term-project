@@ -339,11 +339,6 @@ header {
 }
 
 /* Project Section second approach */
-.projectSection {
-  margin: 100px 0 100px 0;
-  padding: 0 30px;
-}
-
 .projectSection h2 {
   text-align: center;
   margin: 40px 0;
@@ -1117,13 +1112,32 @@ header {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .projectSection {
+    margin-top: 150px;
+  }
+  .projectSection h2 {
+    text-align: left;
+    margin: 50px 0;
+    font-size: 2.3em;
+  }
+  .projectsArticles {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: auto auto;
+    margin-top: 80px;
+  }
+}
+
 /* Burger Menu */
 
 @media all and (min-width: 992px) {
   .burger {
     display: none;
   }
+}
 
+@media only screen and (min-width: 1024px) {
   .projectsArticles {
     display: grid;
     grid-auto-flow: row;
@@ -1133,6 +1147,12 @@ header {
   .projectImg {
     width: 340px;
     height: 240px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .projectsArticle {
+    width: 340px;
   }
 }
 
