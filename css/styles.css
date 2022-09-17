@@ -338,6 +338,70 @@ header {
   margin-top: 57px;
 }
 
+/* Project Section second approach */
+.projectSection {
+  margin: 100px 0 100px 0;
+  padding: 0 30px;
+}
+
+.projectSection h2 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 1.8em;
+}
+.projectsArticles {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 16px;
+  text-align: left;
+}
+.projectsArticle {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.projectImg {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.project_text {
+  padding: 40px 20px;
+  color: #6b708d;
+  margin-left: 20px;
+}
+.project_text::first-letter {
+  text-transform: capitalize;
+}
+.project_text h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin: 20px 30px 40px 0;
+}
+.dataBody {
+  line-height: 22px;
+  height: 140px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(#292e47, #6b708d, #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text::first-letter {
+  text-transform: capitalize;
+}
+.learnMore {
+  text-decoration: none;
+  color: #072ac8;
+  margin: 100px 0;
+}
+
 /* Testimonials Section */
 
 .testimonials-section {
@@ -1058,6 +1122,17 @@ header {
 @media all and (min-width: 992px) {
   .burger {
     display: none;
+  }
+
+  .projectsArticles {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: auto auto auto;
+  }
+
+  .projectImg {
+    width: 340px;
+    height: 240px;
   }
 }
 

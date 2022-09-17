@@ -16,7 +16,7 @@ async function renderData() {
   info.forEach((item) => {
     let cardInfo = `<article class="projectsArticle">
                             <img
-                                src="../assets/projects-section/${item.id}.jpg"
+                                src="../src/projects-section/${item.id}.jpg"
                                 alt="imagen"
                                 class="projectImg"
                             />
